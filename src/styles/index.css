@@ -1,0 +1,24 @@
+
+:root {
+  --col-purple: #610059;
+  --col-yellow: #ffe760;
+  --col-brown: #614500;
+}
+
+@font-face {
+  font-family: "Germania One";
+  src: url("../fonts/Germania_One/GermaniaOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ysabeau";
+  src: url("../fonts/Ysabeau/Ysabeau-VariableFont_wght.ttf") format("truetype");
+  font-weight: 600 700;
+}
+
+body {
+  margin: 0;
+  font-family: "Ysabeau", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
