@@ -1,13 +1,13 @@
-import energyPotion from "../../src/images/EnergyPotion.png"
-import speedPotion from "../../src/images/SpeedPotion.png"
-import strengthPotion from "../../src/images/StrengthPotion.png"
-import invisPotion from "../../src/images/InvisPotion.png"
-import healthPotion from "../../src/images/HealthPotion.png"
-import lovePotion from "../../src/images/LovePotion.png"
-import luckPotion from "../../src/images/LuckPotion.png"
-import waterPotion from "../../src/images/WaterPotion.png"
-import alcoholPotion from "../../src/images/AlcoholPotion.png"
-import sharkPotion from "../../src/images/SharkPotion.png"
+import energyPotion from "../../images/EnergyPotion.png"
+import speedPotion from "../../images/SpeedPotion.png"
+import strengthPotion from "../../images/StrengthPotion.png"
+import invisPotion from "../../images/InvisPotion.png"
+import healthPotion from "../../images/HealthPotion.png"
+import lovePotion from "../../images/LovePotion.png"
+import luckPotion from "../../images/LuckPotion.png"
+import waterPotion from "../../images/WaterPotion.png"
+import alcoholPotion from "../../images/AlcoholPotion.png"
+import sharkPotion from "../../images/SharkPotion.png"
 
 function Product(id, name, desc, image) {
     return {id, name, desc, image}
