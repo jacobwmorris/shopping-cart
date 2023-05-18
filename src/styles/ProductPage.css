@@ -1,0 +1,74 @@
+ 
+.ProductPage-listflexbox {
+    padding: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ProductPage-cardflexbox {
+    padding: 10px;
+    border: 5px ridge var(--col-brown);
+    box-shadow: 0 0 12px inset black;
+    text-shadow: 0 2px black;
+    background-color: var(--col-green);
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProductPage-name {
+    /* margin: 10px 0; */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.ProductPage-controls {
+    margin: auto 0 10px 0;
+}
+
+.ProductPage-button {
+    border: 0;
+    height: 2rem;
+    font-family: inherit;
+    font-size: 1.2em;
+    text-shadow: inherit;
+    color: var(--col-yellow);
+    background-color: transparent;
+    transition: text-shadow 0.2s ease-out, font-size 0.5s ease-out;
+}
+
+.ProductPage-squarebutton {
+    font-size: 2em;
+    display: inline-block;
+}
+
+.ProductPage-button:hover {
+    text-shadow: 0 0 6px #00ff15;
+}
+
+.ProductPage-input {
+    border: 3px inset #004606;
+    margin: 0 15px;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    color: var(--col-yellow);
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #004606;
+
+}
+
+.ProductPage-potimage {
+    margin: 10px;
+    width: 60%;
+}
+
+.ProductPage-addbutton {
+    width: 100%;
+}

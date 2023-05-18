@@ -1,6 +1,6 @@
 
 .NavBar-flexbox {
-    border-bottom: 0.5rem groove var(--col-brown);
+    border-bottom: 5px ridge var(--col-brown);
     background-color: var(--col-purple);
     box-shadow: 0 0 12px inset black;
     height: 4rem;
