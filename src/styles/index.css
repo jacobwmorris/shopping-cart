@@ -24,6 +24,7 @@
 }
 
 body {
+  color: white;
   background-color: var(--col-blue);
   font-family: "Ysabeau", sans-serif;
   -webkit-font-smoothing: antialiased;
