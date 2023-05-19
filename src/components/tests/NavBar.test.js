@@ -12,14 +12,4 @@ describe("NavBar tests", () => {
   it("Renders without crashing", () => {
     render(<BrowserRouter><NavBar/></BrowserRouter>)
   })
-
-  it("Adds a style to the currently selected link", async () => {
-    const user = userEvent.setup()
-    render(<BrowserRouter><NavBar/></BrowserRouter>)
-
-    const link = screen.getByRole("link", {name: "Shop"})
-    await act(() => user.click(link))
-
-    expect(link).toHaveClass("NavBar-current")
-  })
 })

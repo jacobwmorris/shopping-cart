@@ -3,7 +3,6 @@ import sackIcon from "../images/sack.svg"
 import {Link} from "react-router-dom"
 
 function NavBar() {
-  console.log(sackIcon)
   return (
     <nav className="NavBar-flexbox">
       <div className="NavBar-item NavBar-sitetitle">Pete's</div>
