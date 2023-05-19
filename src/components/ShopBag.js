@@ -12,7 +12,7 @@ function ShopBag({itemList}) {
           {itemsRendered.length > 0 ? itemsRendered : <li>Nothing</li>}
         </ul>
         <div>
-          <span>Total: ${totalPrice}</span>
+          <span>Total: ${totalPrice / 100}</span>
           <button>Checkout</button>
         </div>
       </div>
@@ -25,7 +25,7 @@ function ShopBagItem({item}) {
     <li className="ShopBag-itemflexbox">
       <div>{item.amount} x</div>
       <div>{item.name}</div>
-      <div>${item.price}</div>
+      <div>${item.price / 100}</div>
       <button>Remove</button>
     </li>
   )
