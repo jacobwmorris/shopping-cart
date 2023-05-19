@@ -1,6 +1,6 @@
 
-function ShopBag({itemList}) {
-  const itemsRendered = itemList.map((i) => <ShopBagItem key={i.id} item={i}/>)
+function ShopBag({itemList, onRemoveItem}) {
+  const itemsRendered = itemList.map((i) => <ShopBagItem key={i.id} item={i} onRemoveItem={onRemoveItem}/>)
   const totalPrice = itemList.reduce((total, i) => total + i.price, 0)
 
   return (
@@ -20,13 +20,13 @@ function ShopBag({itemList}) {
   )
 }
 
-function ShopBagItem({item}) {
+function ShopBagItem({item, onRemoveItem}) {
   return (
     <li className="ShopBag-itemflexbox">
       <div>{item.amount} x</div>
       <div>{item.name}</div>
       <div>${item.price / 100}</div>
-      <button>Remove</button>
+      <button onClick={(e) => onRemoveItem(item.id)}>Remove</button>
     </li>
   )
 }
