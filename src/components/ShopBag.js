@@ -12,7 +12,7 @@ function ShopBag({itemList, onRemoveItem}) {
           {itemsRendered.length > 0 ? itemsRendered : <li>Nothing</li>}
         </ul>
         <div>
-          <span>Total: ${totalPrice / 100}</span>
+          <span>Total: ${(totalPrice / 100).toFixed(2)}</span>
           <button>Checkout</button>
         </div>
       </div>
@@ -25,7 +25,7 @@ function ShopBagItem({item, onRemoveItem}) {
     <li className="ShopBag-itemflexbox">
       <div>{item.amount} x</div>
       <div>{item.name}</div>
-      <div>${item.price / 100}</div>
+      <div>${(item.price / 100).toFixed(2)}</div>
       <button onClick={(e) => onRemoveItem(item.id)}>Remove</button>
     </li>
   )
