@@ -19,7 +19,7 @@ function ShopApp() {
     const productInBag = itemsInBag.findIndex((p) => id === p.id)
 
     if (productInBag === -1) {
-      setItemsInBag(itemsInBag.concat([{amount, price, ...product}]))
+      setItemsInBag(itemsInBag.concat([{...product, amount, price}]))
     }
     else {
       const newList = itemsInBag.slice()
