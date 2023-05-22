@@ -14,6 +14,27 @@ function ProductPage({productList, onAddItem}) {
 function ProductCard({product, onAddItem}) {
   const [amount, setAmount] = useState(1)
 
+  function handleChange(event) {
+    if (event.target.value.length === 0) {
+      setAmount(0)
+      return
+    }
+
+    const newAmount = parseInt(event.target.value)
+    if (isNaN(newAmount)) {
+      setAmount(1)
+    }
+    else {
+      setAmount(newAmount)
+    }
+  }
+
+  function handleFocusOut(event) {
+    if (event.target.value === "" || amount <= 0) {
+      setAmount(1)
+    }
+  }
+
   return (
     <div className="ProductPage-cardflexbox">
       <h2 className="ProductPage-name">{product.name}</h2>
@@ -22,11 +43,27 @@ function ProductCard({product, onAddItem}) {
       </div>
       <p>{product.desc}</p>
       <div className="ProductPage-controls">
-        <button className="ProductPage-button" onClick={(e) => onAddItem(product.id, amount)}>Add to bag</button>
+        <button
+          className="ProductPage-button"
+          onClick={(e) => onAddItem(product.id, amount)}
+        >Add to bag</button>
         <div>
-          <button className="ProductPage-button ProductPage-squarebutton">-</button>
-          <input className="ProductPage-input" type="text" name="amount" defaultValue="1"/>
-          <button className="ProductPage-button ProductPage-squarebutton">+</button>
+          <button
+            className="ProductPage-button ProductPage-squarebutton"
+            onClick={(e) => setAmount(amount === 1 ? amount : amount - 1)}
+          >-</button>
+          <input
+            className="ProductPage-input"
+            type="text"
+            name="amount"
+            value={amount === 0 ? "" : amount}
+            onChange={handleChange}
+            onBlur={handleFocusOut}
+          />
+          <button
+            className="ProductPage-button ProductPage-squarebutton"
+            onClick={(e) => setAmount(amount + 1)}
+          >+</button>
         </div>
       </div>
     </div>
