@@ -48,24 +48,13 @@
     filter: drop-shadow(0 3px 0 black);
     will-change: filter;
     transition: all 0.5s ease-out;
-    /* animation: 0.5s ease-in-out 0s infinite alternate backwards paused flash; */
 }
 
 .NavBar-icon:hover {
     width: 3.1rem;
     height: 3.1rem;
     filter: drop-shadow(0 0 6px #ff00ea);
-    /* animation-play-state: running; */
 }
-
-/* @keyframes flash {
-    from {
-        filter: drop-shadow(0 3px 0 black);
-    }
-    to {
-        filter: drop-shadow(0 0 6px #ff00ea);
-    }
-} */
 
 .NavBar-itemcounter {
     position: absolute;
