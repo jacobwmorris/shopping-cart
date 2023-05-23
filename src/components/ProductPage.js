@@ -42,7 +42,9 @@ function ProductCard({product, onAddItem}) {
         <img className="ProductPage-potimage" src={product.image} alt={product.name}/>
       </div>
       <p>{product.desc}</p>
+      
       <div className="ProductPage-controls">
+        <p className="ProductPage-pricetag">${(product.price / 100).toFixed(2)}</p>
         <button
           className="ProductPage-button"
           onClick={(e) => onAddItem(product.id, amount)}

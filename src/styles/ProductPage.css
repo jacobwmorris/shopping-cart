@@ -22,9 +22,12 @@
 }
 
 .ProductPage-name {
-    /* margin: 10px 0; */
     font-size: 2em;
     font-weight: bold;
+}
+
+.ProductPage-pricetag {
+    font-size: 2em;
 }
 
 .ProductPage-controls {
@@ -35,7 +38,7 @@
     border: 0;
     height: 2rem;
     font-family: inherit;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-shadow: inherit;
     color: var(--col-yellow);
     background-color: transparent;
