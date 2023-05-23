@@ -39,9 +39,11 @@ function ShopApp() {
     }
   }
 
+  const itemCount = itemsInBag.reduce((total, i) => total + i.amount, 0)
+
   return (
     <BrowserRouter>
-      <NavBar onBagToggle={handleBagToggle}/>
+      <NavBar itemCount={itemCount} onBagToggle={handleBagToggle}/>
       {showBag ? <ShopBag itemList={itemsInBag} onRemoveItem={removeItem}/> : null}
       <Routes>
         <Route path="/" element={<p>(Insert home page here)</p>}/>
@@ -50,11 +52,5 @@ function ShopApp() {
     </BrowserRouter>
   )
 }
-
-/* const sampleBag = [
-  {id: 0, name: "sample", amount: 1, price: 3.99},
-  {id: 1, name: "sample 2", amount: 2, price: 6.99},
-  {id: 2, name: "sample 3", amount: 5, price: 24.99}
-] */
 
 export default ShopApp;
