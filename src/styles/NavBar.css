@@ -30,15 +30,16 @@
     transition: text-shadow 0.5s ease-out, font-size 0.5s ease-out;
 }
 
+.NavBar-link:hover {
+    font-size: 1.6em;
+    text-shadow: 0 0 6px #ff00ea;
+}
+
 .NavBar-button {
     padding: 0;
     border: 0;
     background-color: transparent;
-}
-
-.NavBar-link:hover {
-    font-size: 1.6em;
-    text-shadow: 0 0 6px #ff00ea;
+    position: relative;
 }
 
 .NavBar-icon {
@@ -47,10 +48,31 @@
     filter: drop-shadow(0 3px 0 black);
     will-change: filter;
     transition: all 0.5s ease-out;
+    /* animation: 0.5s ease-in-out 0s infinite alternate backwards paused flash; */
 }
 
 .NavBar-icon:hover {
     width: 3.1rem;
     height: 3.1rem;
     filter: drop-shadow(0 0 6px #ff00ea);
+    /* animation-play-state: running; */
+}
+
+/* @keyframes flash {
+    from {
+        filter: drop-shadow(0 3px 0 black);
+    }
+    to {
+        filter: drop-shadow(0 0 6px #ff00ea);
+    }
+} */
+
+.NavBar-itemcounter {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-shadow: none;
+    pointer-events: none;
 }
