@@ -18,7 +18,8 @@ function NavBar({itemCount, onBagToggle}) {
     }
 
     iconRef.current.animate(bagKeyframes, {duration: 150, iterations: 2, direction: "alternate"})
-  }, [itemCount, isFirstRender])
+  //eslint-disable-next-line
+  }, [itemCount])
 
   return (
     <nav className="NavBar-flexbox">
