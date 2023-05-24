@@ -6,9 +6,9 @@ import "@testing-library/jest-dom"
 import ShopBag from "../ShopBag"
 
 describe("ShopBag tests", () => {
-  it("Displays Nothing for an empty list", () => {
+  it("Displays No items for an empty list", () => {
     render(<ShopBag itemList={[]} visible={true}/>)
-    expect(screen.getByText("Nothing")).toBeInTheDocument()
+    expect(screen.getByText("No items.")).toBeInTheDocument()
   })
 
   it("Displays a single item", () => {
@@ -24,6 +24,6 @@ describe("ShopBag tests", () => {
     ]
 
     const {container} = render(<ShopBag itemList={sampleList} visible={true}/>)
-    expect(container.querySelectorAll(".ShopBag-itemflexbox").length).toBe(3)
+    expect(container.querySelectorAll(".ShopBag-itemrow").length).toBe(3)
   })
 })

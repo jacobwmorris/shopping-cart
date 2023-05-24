@@ -35,21 +35,13 @@ function ShopBag({itemList, onRemoveItem}) {
 
 function ShopBagItem({item, onRemoveItem}) {
   return (
-    <tr>
+    <tr className="ShopBag-itemrow">
       <td>{item.name}</td>
       <td>{item.amount}</td>
       <td>${(item.price / 100).toFixed(2)}</td>
       <td><button onClick={(e) => onRemoveItem(item.id)}>Remove</button></td>
     </tr>
   )
-  /* return (
-    <li className="ShopBag-itemflexbox">
-      <div>{item.amount} x</div>
-      <div>{item.name}</div>
-      <div>${(item.price / 100).toFixed(2)}</div>
-      <button onClick={(e) => onRemoveItem(item.id)}>Remove</button>
-    </li>
-  ) */
 }
 
 export default ShopBag
