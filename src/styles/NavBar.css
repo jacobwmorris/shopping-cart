@@ -16,7 +16,6 @@
 }
 
 .NavBar-sitetitle {
-    color: var(--col-yellow);
     font-size: 2.5em;
     font-family: "Germania One", sans-serif;
     flex: 1 0 auto;
