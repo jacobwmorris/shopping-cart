@@ -1,5 +1,8 @@
 
 .NavBar-flexbox {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     border-bottom: 5px ridge var(--col-brown);
     background-color: var(--col-purple);
     box-shadow: 0 0 12px inset black;

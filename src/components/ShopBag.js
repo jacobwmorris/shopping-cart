@@ -1,13 +1,13 @@
 import "../styles/ShopBag.css"
 
-function ShopBag({itemList, onRemoveItem}) {
+function ShopBag({itemList, onRemoveItem, onHideBag}) {
   const itemsRendered = itemList.map((i) => <ShopBagItem key={i.id} item={i} onRemoveItem={onRemoveItem}/>)
   const totalPrice = itemList.reduce((total, i) => total + i.price, 0)
 
   return (
-    <div className="ShopBag-flexbox">
+    <div className="ShopBag-background">
       <div className="ShopBag-container">
-        <button className="ShopBag-hidebutton">Hide</button>
+        <button className="ShopBag-hidebutton" onClick={onHideBag}>Hide</button>
         <table className="ShopBag-table">
           <thead>
             <tr>

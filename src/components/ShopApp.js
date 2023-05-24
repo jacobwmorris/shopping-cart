@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { useState } from "react"
+import "../styles/ShopApp.css"
 import NavBar from "./NavBar"
 import products from "./helpers/products"
 import ProductPage from "./ProductPage"
@@ -11,6 +12,10 @@ function ShopApp() {
 
   function handleBagToggle() {
     setShowBag(!showBag)
+  }
+
+  function handleBagExit() {
+    setShowBag(false)
   }
 
   function addItem(id, amount) {
@@ -44,11 +49,13 @@ function ShopApp() {
   return (
     <BrowserRouter>
       <NavBar itemCount={itemCount} onBagToggle={handleBagToggle}/>
-      {showBag ? <ShopBag itemList={itemsInBag} onRemoveItem={removeItem}/> : null}
-      <Routes>
-        <Route path="/" element={<p>(Insert home page here)</p>}/>
-        <Route path="/shop/" element={<ProductPage productList={products} onAddItem={addItem}/>}/>
-      </Routes>
+      <main class="ShopApp-pagebody">
+        {showBag ? <ShopBag itemList={itemsInBag} onRemoveItem={removeItem} onHideBag={handleBagExit}/> : null}
+        <Routes>
+          <Route path="/" element={<p>(Insert home page here)</p>}/>
+          <Route path="/shop/" element={<ProductPage productList={products} onAddItem={addItem}/>}/>
+        </Routes>
+      </main>
     </BrowserRouter>
   )
 }

@@ -1,12 +1,16 @@
 
-.ShopBag-flexbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.ShopBag-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0005;
 }
 
 .ShopBag-container {
-    position: relative;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .ShopBag-table {
