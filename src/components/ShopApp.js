@@ -49,7 +49,7 @@ function ShopApp() {
   return (
     <BrowserRouter>
       <NavBar itemCount={itemCount} onBagToggle={handleBagToggle}/>
-      <main class="ShopApp-pagebody">
+      <main className="ShopApp-pagebody">
         {showBag ? <ShopBag itemList={itemsInBag} onRemoveItem={removeItem} onHideBag={handleBagExit}/> : null}
         <Routes>
           <Route path="/" element={<p>(Insert home page here)</p>}/>
