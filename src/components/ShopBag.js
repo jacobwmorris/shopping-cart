@@ -23,12 +23,19 @@ function ShopBag({itemList, onRemoveItem, onHideBag}) {
     nodeBg.animate(bgKeyframes, {duration: 200, iterations: 1}).finished
       .then(() => {
         const nodeTab = table.current
+        if (nodeTab === null) {
+          throw new Error("Element removed before animation finished")
+        }
         return nodeTab.animate(tableKeyframes, {duration: 500, easing: "ease-out", iterations: 1}).finished
       })
       .then(() => {
         const nodeTab = table.current
+        if (nodeTab === null) {
+          throw new Error("Element removed before animation finished")
+        }
         nodeTab.style.transform = "translate(-50%, 0)"
       })
+      .catch((err) => console.log(err))
   }, [])
 
   return (
