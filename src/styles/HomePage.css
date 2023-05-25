@@ -1,7 +1,7 @@
 
 .HomePage-container {
+    padding-top: 36px;
     text-shadow: 0 2px black;
-    height: 100%;
 }
 
 .HomePage-titleflexbox {
@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    margin: 36px 0;
+    margin-bottom: 36px;
     border: 5px ridge var(--col-brown);
     padding: 12px;
     border-left: 0;
