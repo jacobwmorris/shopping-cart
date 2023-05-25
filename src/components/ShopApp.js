@@ -3,11 +3,12 @@ import { useState } from "react"
 import "../styles/ShopApp.css"
 import NavBar from "./NavBar"
 import products from "./helpers/products"
+import HomePage from "./HomePage.js"
 import ProductPage from "./ProductPage"
 import ShopBag from "./ShopBag"
 
 function ShopApp() {
-  const [showBag, setShowBag] = useState(true)
+  const [showBag, setShowBag] = useState(false)
   const [itemsInBag, setItemsInBag] = useState([])
 
   function handleBagToggle() {
@@ -52,7 +53,7 @@ function ShopApp() {
       <main className="ShopApp-pagebody">
         {showBag ? <ShopBag itemList={itemsInBag} onRemoveItem={removeItem} onHideBag={handleBagExit}/> : null}
         <Routes>
-          <Route path="/" element={<p>(Insert home page here)</p>}/>
+          <Route path="/" element={<HomePage/>}/>
           <Route path="/shop/" element={<ProductPage productList={products} onAddItem={addItem}/>}/>
         </Routes>
       </main>
