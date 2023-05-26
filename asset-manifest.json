@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.2fa6970c.css",
+    "main.js": "/shopping-cart/static/js/main.0e94d79b.js",
+    "static/media/Ysabeau-VariableFont_wght.ttf": "/shopping-cart/static/media/Ysabeau-VariableFont_wght.225455bdffcaebf62fcd.ttf",
+    "static/media/MainPagePotion.png": "/shopping-cart/static/media/MainPagePotion.7dc270d9529f8d54c7ba.png",
+    "static/media/StrengthPotion.png": "/shopping-cart/static/media/StrengthPotion.35b0a2295011e6448de4.png",
+    "static/media/SpeedPotion.png": "/shopping-cart/static/media/SpeedPotion.cf6ef5a1b4772a0ae100.png",
+    "static/media/LuckPotion.png": "/shopping-cart/static/media/LuckPotion.c299ac5f867e09f0c763.png",
+    "static/media/InvisPotion.png": "/shopping-cart/static/media/InvisPotion.cd0edeabdbda6dcec019.png",
+    "static/media/AlcoholPotion.png": "/shopping-cart/static/media/AlcoholPotion.ea7c49fdd7f67b2ba32d.png",
+    "static/media/HealthPotion.png": "/shopping-cart/static/media/HealthPotion.15df899aae1cdd30e6a1.png",
+    "static/media/SharkPotion.png": "/shopping-cart/static/media/SharkPotion.8820405c7a0fa6022abf.png",
+    "static/media/EnergyPotion.png": "/shopping-cart/static/media/EnergyPotion.2efba91969092e737e5a.png",
+    "static/media/GermaniaOne-Regular.ttf": "/shopping-cart/static/media/GermaniaOne-Regular.60af4d456701662456b1.ttf",
+    "static/media/WaterPotion.png": "/shopping-cart/static/media/WaterPotion.179d05eb6e6999b623c2.png",
+    "static/media/LovePotion.png": "/shopping-cart/static/media/LovePotion.340a23eb64ea20ece377.png",
+    "index.html": "/shopping-cart/index.html",
+    "static/media/sack.svg": "/shopping-cart/static/media/sack.69cd4b0bdeaa33e89b41cf37d9f53d28.svg",
+    "main.2fa6970c.css.map": "/shopping-cart/static/css/main.2fa6970c.css.map",
+    "main.0e94d79b.js.map": "/shopping-cart/static/js/main.0e94d79b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fa6970c.css",
+    "static/js/main.0e94d79b.js"
+  ]
+}
